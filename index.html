@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registration form</title>
+</head>
+<body>
+
+        <div class="container">
+            <form action="/">
+                <h3 class="title">Registration Form</h3>
+                <div class="row">
+                    <div class="title-text">
+                        <label for="fname">First Name:</label>
+                    </div>
+                    <div class="input1">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title-text">
+                        <label for="lname">Last Name:</label>
+                    </div>
+                    <div class="input1">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title-text">
+                        <label for="phone">Phone:</label>
+                    </div>
+                    <div class="input1">
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title-text">
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <div class="input1">
+                        <input type="email" id="email" name="email" placeholder="Your email.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title-text">
+                        <label for="pass">Password:</label>
+                    </div>
+                    <div class="input1">
+                        <input type="password" id="pass" name="pass" placeholder="Your password.." minlength="6" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title-text">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="input1">
+                        <select id="country" name="country" required>
+                            <option value="kharkiv">Kharkiv</option>
+                            <option value="kiev">Kiev</option>
+                            <option value="odessa">Odessa</option>
+                            <option value="dnepr">Dnepr</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title-text">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="input1">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                    <label class="checkbox" for="checkbox">I have read and agree to the terms and conditions!</label>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+          </div>
+   </div>
+</body>
+</html>
